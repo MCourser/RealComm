@@ -1,0 +1,26 @@
+server:
+  context-path: /RealComm
+  port: 8443
+  ssl:
+    key-store: classpath:server.jks
+    key-store-password: lcayy10000
+  compression:
+    enabled: true
+    mime-types:
+    - application/json
+    - application/xml
+    - text/html
+    - text/xml
+    - text/plain
+webrtc:
+  iceServers:
+    - 
+      urls: 
+        - stun:stun.l.google.com:19302
+    - urls: 
+        - turn:webrtcweb.com:7788
+#        - turn:webrtcweb.com:4455
+#        - turn:webrtcweb.com:5544
+      username: muazkh
+      credential: muazkh
+
